@@ -23,9 +23,7 @@ jobs:
         pip install flask pytest
     - name: Run unit tests
       run: |
-        cd /workspace
         python -m pytest tests/test_unit.py -v
     - name: Run integration tests
       run: |
-        cd /workspace
         python -m pytest tests/test_integration.py -v
